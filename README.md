@@ -17,3 +17,37 @@
 
   2. 播放的时候，循环（每隔1s）⾼亮中间圆圈，⾼亮效果为第⼆个绿⾊圆圈，中间有图⽚，⾼亮时⽔果图⽚还是需要在中间。停⽌播放便停⽌⾼亮
 
+## 收获
+
+- 背景图片铺满过大导致有部分不显示
+
+  ```css
+  background-size: 100% 100%;  /* 正确设置 */
+  
+  background-size: cover;  /* 背景图像拓展至无限大，以使背景图像完全覆盖背景区域 */
+  ```
+
+- audio的src设置
+
+  直接设置
+
+  ```js
+  this.audio.src = "@/assets/maka.mp3";
+  ```
+
+  控制台报错
+
+  
+
+  ![](C:\Users\ASUS\Desktop\1.png)
+
+  
+
+  解决方法：利用require动态引入
+  
+  ```js
+  const url = require("@/assets/maka.mp3");
+this.audio.src = url;
+  ```
+  
+  
