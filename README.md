@@ -38,16 +38,16 @@
   控制台报错
 
   
-
-  ![](C:\Users\ASUS\Desktop\1.png)
+    ![](C:\Users\ASUS\Desktop\1.png)
 
   
 
-  解决方法：利用require动态引入
-  
-  ```js
-  const url = require("@/assets/maka.mp3");
+  	解决方法：利用require动态引入
+
+```js
+const url = require("@/assets/maka.mp3");
 this.audio.src = url;
-  ```
-  
-  
+```
+
+
+
